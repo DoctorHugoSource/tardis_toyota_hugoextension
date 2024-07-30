@@ -1,0 +1,23 @@
+"vertexlitgeneric"
+{
+	"$translucent" "1"
+	"$basetexture" "models/cem/toyota_smith/Glass_Green"
+	"$bumpmap" "models/cem/toyota_smith/glass_normal"
+	"$envmap" "models/cem/toyota_smith/metal_env"
+	"$envmaptint" "[0.001 0.002 0.001]"
+	"$model" 1
+	"$color2" "[0.5 0.5 0.5]"
+
+	"$nodecal" "1"
+
+	"$phong"     "1"
+	"$phongexponent"  "63"
+	"$phongboost"   "1"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$phongtint"	"[ .5 .5 .5 ]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"
+	"$rimlightboost" "0.8"
+}

@@ -1,0 +1,54 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/sonic_charger_lights"
+	"$bumpmap" "models/cem/toyota_smith/generic_normal"
+	"$surfaceprop" "Plastic"
+	"$nodecal" "1"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+
+	"$phong"     "1"
+	"$phongexponent"  "15"
+	"$phongboost"   "0.1"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$phongtint"	"[ .5 .5 .5 ]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"
+	"$rimlightboost" "0.8"
+
+	"$blendtintbybasealpha" "0" 
+	"$blendtintcoloroverbase" "0"  
+
+	$detail "models/cem/toyota_smith/sonic_charger_lights_top_glow"
+	$detailscale 1
+	$detailblendmode 3
+	$detailblendfactor 0.5
+
+
+	"$angle" 0.0
+	"$allenscott_scale" 1
+      	"$translate" "[0.0 0.0]"
+        	"$allenscott_center" "[0.5 0.5]"
+
+	"Proxies"
+        {
+            "LinearRamp"
+            {
+                "rate" -80
+                "initialValue" 0.0
+                "resultVar" "$angle"
+            }
+
+            "TextureTransform"
+            {
+                "translateVar" "$translate"
+                "rotateVar" "$angle"
+	"scaleVar" "$allenscott_scale"
+                "centerVar" "$allenscott_center"
+                "resultVar" "$detailtexturetransform"
+            }
+
+        }
+}

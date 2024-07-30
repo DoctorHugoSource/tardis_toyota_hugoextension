@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/flatlinecover"
+	"$bumpmap" "models/cem/toyota_smith/mainfloor_normal"
+	"$surfaceprop" "Wood_Solid"
+	"$nodecal" "1"
+//	"$envmap" "models/cem/toyota_smith/environment"
+	"$envmaptint" "[0.01 0.01 0.01]"
+
+	$phong 					1
+	$phongexponent 			5
+	$phongboost 			0.15
+	$phongtint 				"[ .35 .35 .35 ]"
+	$phongfresnelranges 	"[1 0.5 1]"
+
+	"$detail"				"detail/metal_detail_01"
+	"$detailscale"			"6.4"
+	"$detailblendfactor"	"0.25"
+	"$detailblendmode"		"3"
+
+	$color2 "[0.8 0.8 0.8]"
+}

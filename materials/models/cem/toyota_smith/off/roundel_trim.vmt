@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/cem/toyota_capaldi/roundel_trim"
+	"$color2" "[0.5 0.5 0.5]"
+	"$nodecal" "1"
+}

@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	$basetexture "models/TARDISman/tardisman550/light_f"
+	$selfillum 1
+	$selfillumtint "[9 9 9]"
+	$selfillummask "models/TARDISman/tardisman550/light_f"
+}

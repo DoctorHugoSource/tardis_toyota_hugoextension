@@ -1,0 +1,30 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/catwalklightsstaticred"
+	"$bumpmap" "models/cem/toyota_smith/glass_normal"
+	"$surfaceprop" "Plastic"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/red"
+	"$nodecal" "1"
+
+	"$phong"     "1"
+	"$phongexponent"  "63"
+	"$phongboost"   "0.5"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$phongtint"	"[ 1 0.1 0.1 ]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"	
+	"$rimlightboost" "0.8"
+
+		"Proxies"
+		{
+			"AnimatedTexture"
+				{
+					"animatedTextureVar" "$basetexture"
+					"animatedTextureFrameNumVar" "$frame"
+					"animatedTextureFrameRate" "35"
+				}
+		}
+}

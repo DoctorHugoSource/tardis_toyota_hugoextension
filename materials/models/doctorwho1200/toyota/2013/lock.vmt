@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/doctorwho1200/toyota/2013/lock"
+	"$envmap" "models/doctorwho1200/toyota/environment"
+	"$envmaptint" "[0.5 0.5 0.5]"
+	"$nodecal" "1"
+	"$surfaceprop" "Wood_Solid"
+}

@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/catwalklightsfloorred"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$nodecal" "1"
+	"$color2" "[1 0.9 0.85]"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+			{
+				"animatedTextureVar" "$basetexture"
+				"animatedTextureFrameNumVar" "$frame"
+				"animatedTextureFrameRate" "45"
+			}
+	}
+}

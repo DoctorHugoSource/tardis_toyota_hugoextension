@@ -1,0 +1,19 @@
+"VertexlitGeneric"
+{
+	"$additive" 1
+	"$basetexture" "models/cem/toyota_smith/consoleglass"
+	"$bumpmap" "models/cem/toyota_smith/glass_normal"
+	"$surfaceprop" "Glass"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$translucent" 1
+//	"$envmap" "models/cem/toyota_smith/environment"
+	"$envmaptint" "[0.5 0.5 0.5]"
+	"$nodecal" "1"
+
+	$phong 					1
+	$phongexponent 			75
+	$phongboost 			55
+	$phongtint 				"[ .35 .35 .35 ]"
+	$phongfresnelranges 	"[0.05 0.5 1]"
+}

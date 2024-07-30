@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/neonoff"
+	"$bumpmap" "models/cem/toyota_smith/glass_normal"
+	"$surfaceprop" "Glass"
+	"$translucent" 1
+	"$additive" 1
+	"$nodecal" "1"
+	"$color2" "[0.4 0.4 0.4]"
+
+	"$phong" "1"
+	"$phongexponent" "30"
+	"$phongboost" "0.1"	
+	"$phongfresnelranges"	"[ 8 4 8 ]"
+}

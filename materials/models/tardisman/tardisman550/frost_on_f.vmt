@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	$basetexture "models/TARDISman/tardisman550/white"
+	$selfillum 1
+	$selfillummask "models/TARDISman/tardisman550/white"
+}

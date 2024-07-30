@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/doctorwho1200/toyota/2017/windows2"
+	"$bumpmap" "models/doctorwho1200/toyota/2017/windowsn"
+	"$envmap" "models/doctorwho1200/toyota/environment"
+	"$envmaptint" "[0.01 0.01 0.01]"
+	"$nodecal" "0"
+	"$normalmap" "models/doctorwho1200/toyota/2017/windowsn"
+	"$selfillum" "0"
+	"$selfillummask" "models/doctorwho1200/toyota/white"
+	"$surfaceprop" "Glass"
+}

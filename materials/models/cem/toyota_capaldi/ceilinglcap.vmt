@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/ceilingl"
+	"$surfaceprop" "Metal"
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$selfillum" 1
+}

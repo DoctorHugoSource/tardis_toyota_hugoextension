@@ -1,0 +1,55 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/cem/toyota_capaldi/roundel_trim"
+	"$selfillum" "1"
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$selfillumtint" "[0.01 0.01 0.3]"
+	"$nodecal" "1"
+	"$color2" "[0.8 0.85 0.9]"
+
+	// LIGHT ANIMATION
+	$sine 0
+	$sine2 0
+	$sine3 0
+
+	Proxies
+	{
+		Sine
+		{
+			sineperiod 7.5
+			sinemin 0.0
+			sinemax 0.1
+			resultVar $sine
+			timeoffset 0
+		}
+		Sine
+		{
+			sineperiod 3.25
+			sinemin 0.0
+			sinemax 0.025
+			resultVar $sine2
+		}
+		Add
+		{
+			srcVar1 $sine
+			srcVar2 $sine2
+			resultVar $sine3
+		}
+		Equals
+		{
+			srcVar1 $sine3
+			resultVar "$selfillumtint[2]"
+		}
+		Equals
+		{
+			srcVar1 $sine2
+			resultVar "$selfillumtint[0]"
+		}
+		Equals
+		{
+			srcVar1 $sine2
+			resultVar "$selfillumtint[1]"
+		}
+	}
+
+}

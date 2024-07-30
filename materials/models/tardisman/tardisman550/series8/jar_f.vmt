@@ -1,0 +1,17 @@
+VertexLitGeneric
+{
+	$basetexture "models/TARDISman/tardisman550/jar_f"
+	$envmap "models/TARDISman/tardisman550/environment"
+	$envmaptint "[.5 .5 .5]"
+	$phong 1
+	$phongalbedotint 1
+	$phongalbedoboost 255
+	$phongexponenttexture "models/TARDISman/tardisman550/tardis_f_r3"
+	$phongboost 25
+	$phongfresnelranges "[5 5 5]"
+	$rimlight               1
+	$rimlightexponent       0
+	$rimlightboost          25
+	$halflambert 1
+	$translucent 1
+}

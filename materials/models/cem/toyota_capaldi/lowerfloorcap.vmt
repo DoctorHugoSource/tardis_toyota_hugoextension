@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/lowerfloor"
+	"$bumpmap" "models/cem/toyota_smith/metal_normal"
+	"$nodecal" "1"
+	"$surfaceprop" "Metal"
+
+	"$envmap" "models/cem/toyota_smith/environment"
+	"$envmaptint" "[0.05 0.0375 0.025]"
+
+	$phong 					1
+	$phongexponent 			75
+	$phongboost 			15
+	$phongtint 				"[ .35 .35 .35 ]"
+	$phongfresnelranges 	"[0.05 1 1]"
+
+	"$detail"				"detail/metal_detail_01"
+	"$detailscale"			"40.283"
+	"$detailblendfactor"	"0.2"
+	"$detailblendmode"		"0"
+}

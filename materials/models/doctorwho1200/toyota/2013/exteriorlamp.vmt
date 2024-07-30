@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/doctorwho1200/toyota/2013/exteriorlamp"
+	"$envmap" "models/doctorwho1200/toyota/environment"
+	"$envmaptint" "[0.3 0.3 0.3]"
+	"$nodecal" "1"
+	"$halflambert" "1"
+	"$surfaceprop" "Glass"
+}

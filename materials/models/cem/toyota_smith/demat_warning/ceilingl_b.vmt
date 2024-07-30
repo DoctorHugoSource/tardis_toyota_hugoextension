@@ -1,0 +1,35 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/ceilingl_off"
+	"$surfaceprop" "Plastic"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$selfillumtint" "[1.5 1.5 1.5]"
+	"$nodecal" "1"
+
+//	$detail "models/cem/toyota_smith/ceilingl_glow"
+	$detailscale 1
+	$detailblendmode 1
+	$detailblendfactor 0.9
+
+
+	"Proxies"
+	{
+		"Sine"
+		{
+			"sinemax" "120"
+			"sinemin" "-90"
+			"sineperiod" "7"
+			"timeoffset" ".75"
+			"resultvar" "$selfillumtint"
+		}
+
+		"Clamp"
+		{
+			min                 .4
+			max                120
+			srcVar1             $selfillumtint
+			resultVar           $selfillumtint
+		}
+	}
+}

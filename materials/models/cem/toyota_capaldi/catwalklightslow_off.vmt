@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/catwalklightsstaticoff"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$envmap" "models/cem/toyota_capaldi/cubemap_shapes002"
+	"$phong" "1"
+	"$phongexponent"  "33"
+	"$envmaptint" "[0.5 0.5 0.5]"
+}

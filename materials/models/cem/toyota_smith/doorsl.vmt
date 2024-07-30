@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/doorsl"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$envmap" "models/cem/toyota_smith/environment"
+	"$envmaptint" "[0.8 0.8 0.8]"
+	"$nodecal" "1"
+}

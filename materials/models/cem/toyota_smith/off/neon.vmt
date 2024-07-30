@@ -1,0 +1,29 @@
+"UnlitGeneric"
+{
+	"$surfaceprop" "Glass"
+	"$basetexture" "models/cem/toyota_smith/neonblue"
+	"$bumpmap" "models/cem/toyota_smith/glass_normal"
+	"$nodecal" "1"
+	"$model" "1"
+	"$color2" "[0.2 0.4 2.6]"
+
+	"$envmap" "models/cem/toyota_smith/environment"
+	"$envmaptint" "[0.25 0.5 0.3]"
+
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/blue"
+	"$selfillumtint" "[1.0 2.25 4]"
+
+	$sine                       0
+	Proxies
+	{
+		Sine
+		{
+			sineperiod          15
+			sinemin             0.1
+			sinemax             0.7
+			resultVar           "$color2[1]"
+			timeoffset          1
+		}
+	}
+}

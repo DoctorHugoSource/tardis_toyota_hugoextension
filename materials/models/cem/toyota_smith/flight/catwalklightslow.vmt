@@ -1,0 +1,19 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_capaldi/catwalklightslowdemat"
+	"$surfaceprop" "Plastic"
+	"$selfillum" 1
+	"$selfillumtint" "[1.1 1.1 1.1]"
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$nodecal" "1"
+
+		"Proxies"
+		{
+			"AnimatedTexture"
+				{
+					"animatedTextureVar" "$basetexture"
+					"animatedTextureFrameNumVar" "$frame"
+					"animatedTextureFrameRate" "5"
+				}
+		}
+}

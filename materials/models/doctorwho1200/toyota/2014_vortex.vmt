@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/doctorwho1200/toyota/2014_vortex"
+	"$surfaceprop" "water"
+	"$selfillum" 1
+	"$selfillummask" "models/doctorwho1200/toyota/white"
+	"$nodecal" "1"
+		"Proxies"
+		{
+			"AnimatedTexture"
+				{
+					"animatedTextureVar" "$basetexture"
+					"animatedTextureFrameNumVar" "$frame"
+					"animatedTextureFrameRate" "24"
+				}
+		}
+}

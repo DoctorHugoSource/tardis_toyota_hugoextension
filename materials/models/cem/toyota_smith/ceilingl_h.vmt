@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/ceilingl"
+	"$bumpmap" "models/cem/toyota_smith/glass_normal"
+	"$surfaceprop" "Plastic"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+//	"$selfillumtint" "[1.5 1.5 1.5]"
+	"$nodecal" "1"
+	"$color2" "[1 1 0.9]"
+
+	"$phong"     "1"
+	"$phongexponent"  "63"
+	"$phongboost"   "2"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$phongtint"	"[ .5 .5 .5 ]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"	
+	"$rimlightboost" "0.8"
+}

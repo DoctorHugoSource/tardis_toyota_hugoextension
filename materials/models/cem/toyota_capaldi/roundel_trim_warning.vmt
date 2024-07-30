@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_capaldi/roundel_trim_warning"
+	"$surfaceprop" "water"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+	"$selfillumtint" "[1.8 1.5 0.8]"
+	"$nodecal" "1"
+	"Proxies"
+	{
+		"AnimatedTexture"
+			{
+				"animatedTextureVar" "$basetexture"
+				"animatedTextureFrameNumVar" "$frame"
+				"animatedTextureFrameRate" "4"
+			}
+	}
+}

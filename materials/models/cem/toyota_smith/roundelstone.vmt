@@ -1,0 +1,34 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/roundelstone"
+	"$bumpmap" "models/cem/toyota_smith/generic_normal"
+	"$surfaceprop" "Plastic"
+	"$nodecal" "1"
+	"$selfillum" 1
+	"$selfillummask" "models/cem/toyota_smith/white"
+	$selfillumtint "[1.5 1 1]"
+	$color2 "[1.5 1 1]"
+
+	"$envmap" "models/cem/toyota_smith/metal_env"
+	"$envmaptint" "[ 0.05 0.05 0.05 ]"
+
+	"$phong"     "1"
+	"$phongexponent"  "63"
+	"$phongboost"   "25"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"
+	"$rimlightboost" "0.8"
+
+		"Proxies"
+		{
+			"AnimatedTexture"
+				{
+					"animatedTextureVar" "$basetexture"
+					"animatedTextureFrameNumVar" "$frame"
+					"animatedTextureFrameRate" "20"
+				}
+		}
+}
