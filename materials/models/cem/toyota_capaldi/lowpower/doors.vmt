@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/doors"
+	"$bumpmap" "models/cem/toyota_smith/doorsn"
+	"$normalmap" "models/cem/toyota_smith/doorsn"
+	"$surfaceprop" "Wood_Solid"
+	"$nodecal" "1"
+}

@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/lightsconsole"
+	"$bumpmap" "models/cem/toyota_smith/generic_normal"
+	"$nodecal" "1"
+	"$color2" "{50 50 50}"
+
+	"$phong"     "1"
+	"$phongexponent"  "15"
+	"$phongboost"   "0.75"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$phongtint"	"[ .5 .5 .5 ]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"
+	"$rimlightboost" "0.8"
+}

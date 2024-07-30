@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/rails"
+	"$bumpmap" "models/cem/toyota_smith/railsm_normal"
+	"$surfaceprop" "Metal"
+	"$nodecal" "1"
+	"$envmap" "models/cem/toyota_smith/environment"
+	"$envmaptint" "[0.01 0.01 0.01]"
+	"$color2" "[0.7 0.7 0.7]"
+
+	$phong 					1
+	$phongexponent 			15
+	$phongboost 			2.5
+//	$phongtint 				"[ .35 .35 .35 ]"
+	$phongfresnelranges 	"[1 1 1]"
+
+	$rimlight				1
+}

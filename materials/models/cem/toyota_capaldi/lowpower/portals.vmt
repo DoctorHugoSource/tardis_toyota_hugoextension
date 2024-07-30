@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/portals"
+	"$bumpmap" "models/cem/toyota_smith/metal_normal"
+	"$surfaceprop" "Metal"
+	"$nodecal" "1"
+	"$color2" "[1.5 1.3 1.5]"
+
+	$phong 					1
+	$phongexponent 			75
+	$phongboost 			15
+	$phongtint 				"[ .35 .35 .35 ]"
+	$phongfresnelranges 	"[0.05 0.5 1]"
+
+}

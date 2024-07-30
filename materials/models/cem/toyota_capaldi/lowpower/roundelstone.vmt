@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/roundelstoneoff"
+	"$bumpmap" "models/cem/toyota_smith/generic_normal"
+	"$surfaceprop" "Plastic"
+	"$nodecal" "1"
+
+	"$phong"     "1"
+	"$phongexponent"  "63"
+	"$phongboost"   "25"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"
+	"$rimlightboost" "0.8"
+}

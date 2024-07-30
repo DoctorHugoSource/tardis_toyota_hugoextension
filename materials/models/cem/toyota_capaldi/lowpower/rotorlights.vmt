@@ -1,0 +1,19 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/rotorlights"
+	"$bumpmap" "models/cem/toyota_smith/rotorlights_normal"
+	"$surfaceprop" "Plastic"
+	"$nodecal" "1"
+	"$color2" "[0.4 0.4 0.4]"
+
+	"$phong"     "1"
+	"$phongexponent"  "63"
+	"$phongboost"   "2"
+	"$phongfresnelranges"   "[1 8 4]"
+	"$phongtint"	"[ .65 .25 .25 ]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "12"	
+	"$rimlightboost" "0.8"
+}

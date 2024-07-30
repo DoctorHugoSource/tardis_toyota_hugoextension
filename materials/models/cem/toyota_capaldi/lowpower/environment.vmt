@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/cem/toyota_smith/environment"
+	"$surfaceprop" "Glass"
+	"$nodecal" "1"
+}
