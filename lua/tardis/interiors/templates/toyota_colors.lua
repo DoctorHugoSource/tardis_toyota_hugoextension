@@ -241,15 +241,15 @@ local fga88002gf = a_1305_h .. "taSoun"
 
 TARDIS:AddInteriorTemplate("toyota_interior_orange_bright", {
 	Interior = {
-		WindowTint = {  -- requires materials in an external folder
-		Vortex = Color(0,10,40):ToVector(), --color for the window tint during vortex travel
-		TintMult = 3, --multiplier for window tint brightness
-		ExtTint = Color(0, 126, 178):ToVector(),  -- exterior window tint color
-		Extambient = Color(53, 72, 80),  -- exterior ambient lighting color
+		WindowTint = {
+        Vortex = Color(0,10,40):ToVector(), --color for the window tint during vortex travel
+        TintMult = 3, --multiplier for window tint brightness
+        ExtTint = Color(0, 126, 178):ToVector(),  -- exterior window tint color
+        Extambient = Color(53, 72, 80),  -- exterior ambient lighting color
 		},
-		PhaseData = {  -- requires a matproxy in the exterior texture vmt
+		PhaseData = {
 		DefaultPhongExponent = 30,
-		DefaultPhongBoost = 0.2,
+		DefaultPhongBoost = 1,
 		PhaseMult = 0.1,
 		PhongBoostMult = 5,
 		},
@@ -281,10 +281,12 @@ TARDIS:AddInteriorTemplate("toyota_interior_orange_bright", {
 			basebrightness = 0.001,
 			viewmodeladd = 0.2
 		},
+
 		Light={
 			color=Color(255,51,0),
 			warncolor=Color(255,50,10),
 			brightness=0.7,
+
 			-- low power lighting
 				lowpower = true,
 				low_color = Color(170,99,33),
@@ -302,7 +304,33 @@ TARDIS:AddInteriorTemplate("toyota_interior_orange_bright", {
 				["bright0"] = { brightness=0.7, },
 			},
 		},
-		Lights={
+
+		Lamps = {							-- basically just here to have something that lights up the viewmodel
+
+		console = {
+
+			color = Color(154, 218, 255),
+			texture = "effects/flashlight/soft",
+			fov = 140,
+			distance = 120,
+			brightness = 2,
+			pos = Vector(1.0810546875, -1.07421875, 200.267578125),
+			ang = Angle(89.999984741211, -89.39266204834, 180),
+
+				warn = {
+					color = Color(228,6,6),
+					texture = "effects/flashlight001",
+					fov = 140,
+					distance = 120,
+					brightness = 2,
+					pos = Vector(1.0810546875, -1.07421875, 200.267578125),
+					ang = Angle(89.999984741211, -89.39266204834, 180),
+				},
+		},
+	},
+
+		Lights = {
+
 			console_white = {
 				color=Color(163,208,245),
 				warncolor=Color(255,40,40),

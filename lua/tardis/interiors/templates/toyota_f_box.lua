@@ -4,18 +4,20 @@ local EXT_SCALE_VECTOR = Vector(EXT_SCALE, EXT_SCALE, EXT_SCALE)
 local T_base = {
 	Exterior = {
 		Mass=8000,
+
 		Portal={
-			pos=Vector(31,-0.9,50.6),
-			ang=Angle(0,0,0),
-			width=47,
-			height=88.1,
-			thickness = 25,
+			pos = Vector(28, -1, 50),
+			ang = Angle(0,0,0),
+			width = 47,
+			height = 86,
+			thickness = 35,
 			inverted = true,
 		},
 		Fallback={
 			pos=Vector(50,0,10),
 			ang=Angle(0,0,0)
 		},
+
 		Light={
 			enabled=true,
 			pos=Vector(0,0,121),
@@ -23,106 +25,118 @@ local T_base = {
 		},
 		Parts={
 			door={
-				posoffset=Vector(-31,0.9,-50.61),
+				posoffset=Vector(-28,0.9,-50.6),
 				angoffset=Angle(0,0,0),
 				matrixScale = EXT_SCALE_VECTOR,
 			},
-			stephelper = {pos = Vector(14,0,-0), ang = Angle(0, 0, 0), },
-			stephelper2 = {pos = Vector(11,0,3.25), ang = Angle(0, 0, 0), },
+		stephelper = {pos = Vector(14,0,-0), ang = Angle(0, 0, 0), },
+		stephelper2 = {pos = Vector(11,0,3.25), ang = Angle(0, 0, 0), },
+
 		},
-		Sounds={
-			Door={
-				enabled=true,
-				open="TARDISman/tardisman550/rewrite/tardis_2017_door_open_.wav",
-				close="TARDISman/tardisman550/rewrite/tardis_2017_door_close_.wav",
+		Sounds = {
+			Door = {
+				enabled = true,
+				open = "drmatt/tardis/door_open.wav",
+				close = "drmatt/tardis/door_close.wav",
 			},
-			Teleport={
-				demat="Poogie/toyota/demat/dematext_F.wav",
-				mat="Poogie/toyota/mat/matext_F_box.wav",
+			Teleport = {
+				demat = "hug o/tardis/default+/exterior/demat/reverb+volume_filter/demat_ext_s10+_enhanced.ogg",
+				mat = "hug o/tardis/default+/exterior/mat/reverb+volume_filter/mat_ext_s10+_enhanced.ogg",
+				mat_short = "hug o/tardis/default+/exterior/mat/reverb+volume_filter/mat_ext_s10+_enhanced_short2.ogg",
 				fullflight = "Poogie/toyota/full/full_ext_f.wav",
-				mat_fast = "Poogie/toyota/mat/mat_fast_F_box.wav",
+				demat_fast = "hug o/tardis/default+/exterior/demat/reverb+volume_filter/demat_ext_fast_s10+_enhanced.ogg",
+				mat_fast = "hug o/tardis/default+/exterior/mat/reverb+volume_filter/mat_ext_fast_s10+_enhanced_short.ogg",
+				mathop_demat = "hug o/tardis/default+/exterior/demat/reverb+volume_filter/demat_ext_mathop_enhanced.ogg",
+				mathop_mat = "hug o/tardis/default+/exterior/mat/reverb+volume_filter/mat_ext_mathop_enhanced.ogg",
 			},
 		},
-    Teleport = {
+		Teleport = {
 
-        DematSequenceDelays={
-            [1] = 1.5
-        },
-        DematFastSequenceDelays={
-            [1] = 1.5
-        },
+			DematSequenceDelays = {
+				[1] = 2.5
+			},
 
-        SequenceSpeed = {
-         Mat = 1.5,
-         Demat = 1.5
-         },
-        PrematDelay = 11,
+			DematFastSequenceDelays = {
+				[1] = 0.5
+			},
 
-        SequenceSpeedFast = 1.5,
-        PrematSequenceDelayFast = 1,
+			SequenceSpeed = {
+			 Mat = 1.5,
+			 Demat = 1.5,
+			 },
+			PrematDelay = 8.5,
+			PrematDelayShort = 1,
 
-        SequenceSpeedVeryFast = 2.8,
-        PrematSequenceDelayVeryFast = 0.1,
+			SequenceSpeedFast = 1.5,
+			PrematSequenceDelayFast = 0.1,
 
-        SequenceSpeedWarning = 1.5,
-        SequenceSpeedWarnFast = 1.5,
+			SequenceSpeedVeryFast = 2.8,
+			PrematSequenceDelayVeryFast = 0.1,
 
-        SequenceSpeedHads = 1.8,
+			SequenceSpeedWarning = 1.5,
+			SequenceSpeedWarnFast = 1.5,
 
-        DematSequence = {
-            192,
-            250,
-            129,
-            200,
-            85,
-            160,
-            17,
-            90,
-            0
-        },
-        MatSequence = {
-            120,
-            30,
-            140,
-            55,
-            150,
-            70,
-            160,
-            82,
-            200,
-        },
-        DematSequenceFast = {
-            192,
-            250,
-            129,
-            200,
-            85,
-            160,
-            0
-        },
-        MatSequenceFast = {
-            120,
-            30,
-            150,
-            70,
-            160,
-            82,
-            200,
-        },
-        DematSequenceVeryFast = {
-            255,
-            0
-        },
-        MatSequenceVeryFast = {
-            0,
-            255
-        },
-        HadsDematSequence = {
-            100,
-            200,
-            0
-        },
-    },
+			SequenceSpeedHads = 1.8,
+
+			DematSequence = {
+				192,
+				250,
+				129,
+				200,
+				85,
+				160,
+				17,
+				90,
+				0
+			},
+			MatSequence = {
+				120,
+				30,
+				140,
+				55,
+				150,
+				70,
+				160,
+				82,
+				200,
+			},
+			DematSequenceFast = {
+				192,
+				250,
+				129,
+				200,
+				85,
+				160,
+				0
+			},
+			MatSequenceFast = {
+				150,
+				70,
+				160,
+				82,
+				200,
+				255,		-- these have to be here because the base will 'overwrite' any extension's sequence that is shorter than the base
+				255,
+				255,
+				255,
+				255,
+				255,
+				255,
+			},
+			DematSequenceVeryFast = {
+				255,
+				0
+			},
+			MatSequenceVeryFast = {
+				0,
+				255
+			},
+			HadsDematSequence = {
+				100,
+				200,
+				0
+			},
+	},
 		CustomHooks = {
 			exterior_scale = {
 				{
@@ -141,15 +155,19 @@ local T_base = {
 	},
 	Interior = {
 		Portal={
-			pos=Vector(-333.5,0.9,137),
+			pos=Vector(-333.5,0.9,137.8),
 			ang=Angle(0,0,0),
 			width=50,
 			height=110,
-			thickness = -7,
+			exit_point_offset = {
+			pos = Vector(0,0,-2),
+			ang = Angle(0, 0, 0),
+            },
+			thickness = 7,
 		},
 		Parts = {
 			door = {
-				posoffset=Vector(31,-0.9,-50.61),
+				posoffset=Vector(28,-0.9,-52.61),
 				angoffset=Angle(0,180,0),
 				matrixScale = EXT_SCALE_VECTOR,
 			},

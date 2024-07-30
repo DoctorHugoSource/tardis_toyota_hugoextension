@@ -18,20 +18,24 @@ T.Interior={
 		nopowerbrightness = 0.0025,
 		lowpowerbrightness = 0.008,
 	},
-	TransducerCell = {
+
+		Travelcontrols = true,
+
+		TransducerCell = {
         position = Vector(17, 84, 10)  -- defines the position the transducer cell spawns in, relative to the main interior entity
-    },                                 -- protip: use the addon 'no more guessing' to easily get a vector relative to the interior entity
-	Light={
+        },                             -- protip: use the addon 'no more guessing' to easily get a vector relative to the interior entity
+
+	Light = {
 		-- colors are defined in templates
-		pos=Vector(0,0,110),
-		brightness=0.5,
+		pos = Vector(0,0,110),
+		brightness = 0.5,
 		nopower = false,
 	},
-	Lights={
+	Lights = {
 		console_white = {
 			-- colors are defined in templates
-			pos=Vector(0,0,189.5),
-			brightness=0.69,
+			pos = Vector(0,0,189.5),
+			brightness = 0.69,
 		},
 		lower_light = {
 			-- colors are defined in templates
@@ -50,6 +54,7 @@ T.Interior={
 			ang = Angle(0, 0, 135),
 		},
 	},
+
 	IdleSound={
 		{
 			path="cem/toyota/interior_idle_loop.wav",
@@ -206,8 +211,12 @@ T.Interior={
 		toyota_hitbox2				= {pos = Vector(39.214, -28.694, 129.871),  ang = Angle(0, 34.32, 0), scale = 0.3, },
 		toyota_doorframecover		= {pos = Vector(0,0,0), ang = Angle(0, -90, 0), },
 		toyota_entry				= {pos = Vector(0,0,0), ang = Angle(0, 90, 0), },
+
+
+		-- hugoextension parts
 		tardisfireexting			= {pos = Vector(125,165,37), ang = Angle(0, -30, 0), },
 		chronoplasmicshell			= {matrixScale = Vector(20,20,20),},
+
 	},
 	PartTips = {
 		toyota_throttle 		= {pos = Vector(44.891, 14.683, 132.679),	right = false,	down = true, },
@@ -225,7 +234,6 @@ T.Interior={
 		toyota_buttons			= {pos = Vector(10.193, -49.502, 128.582),	right = true,	down = true,  },
 		toyota_switch2			= {pos = Vector(-35.645, 12.629, 135.094),	right = true,	down = true,  },
 		toyota_switch			= {pos = Vector(-45.646, -17.836, 130.267),	right = true,	down = true,  },
-		toyota_lever5			= {pos = Vector(-36.787, -13.688, 134.195),	right = true,	down = false, },
 		toyota_crank5			= {pos = Vector(-24.084, 21.564, 136.681),	right = false,	down = false, },
 		toyota_crank6			= {pos = Vector(-6.901, 31.399, 136.842),	right = false,	down = false, },
 		toyota_crank			= {pos = Vector(30.237, -28.123, 132.312),	right = true,	down = true,  },
@@ -243,22 +251,28 @@ T.Interior={
 		toyota_fiddle1			= {pos = Vector(-48.039, 20.423, 128.479),	right = false, 	down = true, },
 		toyota_spin2			= {pos = Vector(-49.221, 4.594, 129.101),	right = true,	down = true, },
 		toyota_spin8			= {pos = Vector(-32.958, 36.406, 129.314),	right = true,	down = true, },
-		toyota_spin7			= {pos = Vector(-15.003, 46.519, 128.838),	right = true,	down = true, },
 		toyota_spin11			= {pos = Vector(-40.013, -31.619, 130.98),	right = false,	down = true, },
 		toyota_key				= {pos = Vector(-23.59, -20.837, 137.406),	right = true,	down = false, },
+
+
+		-- hugoextension tips
 		tardisfireexting		= {pos = Vector(125, 165, 63), 				text = "Fire Extinguisher", right = false, down = false},
 		toyota_fiddle2			= {pos = Vector(-48.039, 17.423, 128.479),	right = true, 	down = false, },
 		toyota_lever5			= {pos = Vector(-39.239, -12.951, 135.572),	text = "Box illumination", right = true, 	down = false, },
 		toyota_gears			= {pos = Vector(-19.36, -33.05, 132.67),	text = "Window Opacity", right = true, 	down = false, },
-		toyota_sliders			= {pos = Vector(14.47, -31.44, 134.92),		text = "Toggle Map Travel", right = true, 	down = false, },
-		toyota_cranks2			= {pos = Vector(-24.18, -165.67, 130.53),	text = "Locate Bar Samsara", right = true, 	down = false, },
-		toyota_toggles2			= {pos = Vector(14.9, -25.97, 137.27),		text = "Target Map Browser location", right = true, 	down = false, },
-		toyota_flippers 		= {pos = Vector(-36.22, -0.07, 136.28),		text = "Target manually selected map", right = true, 	down = false, },
-		toyota_levers2 			= {pos = Vector(29.86, -3.24, 137.54),		text = "Toggle HADS Sensitivity", right = true, 	down = false, },
-		toyota_levers5			= {pos = Vector(29.74, 6.49, 137.65),		text = "Toggle MatHop", right = true, 	down = false, },
-		toyota_cranks			= {pos = Vector(76.89, 148.56, 130.77),		text = "MatHop Quick Access", right = true, 	down = false, },
-		toyota_spin7			= {pos = Vector(-15.07, 47.02, 129.87),		text = "Toggle Vortex Drift Compensators", right = true, 	down = false, },
-		toyota_ducks			= {pos = Vector(30.33, -30.84, 132.08),		text = "Toggle Multiloop Stabiliser", right = false, 	down = false, },
+		toyota_sliders			= {pos = Vector(14.47, -31.44, 134.92),		right = true, 	down = false, },
+		toyota_cranks2			= {pos = Vector(-24.18, -165.67, 130.53),	right = true, 	down = false, },
+		toyota_toggles2			= {pos = Vector(14.9, -25.97, 137.27),		right = true, 	down = false, },
+		toyota_flippers 		= {pos = Vector(-36.22, -0.07, 136.28),		right = true, 	down = false, },
+		toyota_levers2 			= {pos = Vector(29.86, -3.24, 137.54),		right = true, 	down = false, },
+		toyota_levers5			= {pos = Vector(29.74, 6.49, 137.65),		right = true, 	down = false, },
+		toyota_cranks			= {pos = Vector(76.89, 148.56, 130.77),		right = true, 	down = false, },
+		toyota_spin7			= {pos = Vector(-15.07, 47.02, 129.87),		right = true, 	down = false, },
+		toyota_ducks			= {pos = Vector(30.33, -30.84, 132.08),		right = false, 	down = false, },
+		toyota_levers3 			= {pos = Vector(29.86, 0, 137.54),			right = true, 	down = false, },
+
+
+
 	},
 	CustomTips = {
 		{pos = Vector(-36.982, -151.084, 128.849),	down = true, right = false,	part = "toyota_audio_system", },
@@ -316,6 +330,9 @@ T.Interior={
 		[TARDIS.ToyotaSoundControlSetting]	= "toyota_easteregg_2",
 		[TARDIS.ToyotaSoundControlSetting2]	= "toyota_easteregg_3_toggle",
 		toyota_small_switch_18	= "exterior_light",
+
+
+		-- hugoextension controls
 		toyota_fiddle2			= "vortexswap",
 		toyota_toggles			= "shields",
 		toyota_gears			= "windowopacity",
@@ -328,6 +345,10 @@ T.Interior={
 		toyota_cranks			= "mathop_shortcut",
 		toyota_spin7			= "vortexdrift",
 		toyota_ducks			= "multiloopstabiliser",
+		toyota_levers3			= "fastvortexremat",
+
+
+
 	},
 	CustomHooks = {
 		screens_condition = {
@@ -373,7 +394,7 @@ T.Exterior={
 	Sounds={
 		Teleport = {
 			demat_fail = "Poogie/toyota/others/demat_fail_2017_ext.wav",
-			mat_damaged = "Poogie/toyota/mat/mat_damaged_2013.wav"
+			mat_damaged = "jeredek/tardis/mat_damaged.wav"
 		},
 		FlightLoop="cem/toyota/flight_loopext.wav",
 		RepairFinish="cem/toyota/repairfinish.wav",
@@ -382,10 +403,6 @@ T.Exterior={
 		Lock="cem/toyota/lock.wav",
 		Cloak = "cem/toyota/cloak.wav",
 		CloakOff = "cem/toyota/uncloak.wav",
-	},
-	Teleport={
-		SequenceSpeed=0.62,
-		SequenceSpeedFast=1,
 	},
 }
 
@@ -495,6 +512,12 @@ T.Interior.TextureSets = {
 	},
 
 
+	lowpower = {
+		base = "poweron",
+		prefix = "models/cem/toyota_capaldi/lowpower/",
+	},
+
+
 	normal = {
 		prefix = "models/cem/toyota_smith/",
 		[1] = {"self", 2, "ceilingl_a"},
@@ -516,6 +539,11 @@ T.Interior.TextureSets = {
 	off = {
 		base = "normal",
 		prefix = "models/cem/toyota_smith/off/",
+		[15] = {"toyota_lights_lower_roundels", 3},
+	},
+	offlow = {
+		base = "normal",
+		prefix = "models/cem/toyota_capaldi/lowpower/",
 		[15] = {"toyota_lights_lower_roundels", 3},
 	},
 	warning = {
@@ -713,7 +741,8 @@ T.CustomHooks = {
 			["PowerToggled"] = true,
 		},
 		func = function(ext, int, on)
-			int:ApplyTextureSet(on and "poweron" or "poweroff")
+			local lowpower = int:GetData("lowpowermode", true)
+			int:ApplyTextureSet((on and "poweron") or (lowpower and "lowpower") or "poweroff")
 			int:ApplyTextureSet((on and "poweron" or "poweroff") .. "_specific")
 		end,
 	},
@@ -748,6 +777,7 @@ T.CustomHooks = {
 			["InterruptTeleport"] = true,
 		},
 		func = function(ext, int, data_id, data_value)
+			if not IsValid(int) then return end
 			if ext:GetData("redecorate_parent") ~= nil then return end
 
 			local power = ext:GetData("power-state")
@@ -757,9 +787,13 @@ T.CustomHooks = {
 			local vortex = ext:GetData("vortex")
 			local mat = ext:GetData("mat")
 			local demat = ext:GetData("demat")
+			local lowpower = int:GetData("lowpowermode", true)
 
-			if not power then
+
+			if not power and not lowpower then
 				int:ApplyTextureSet("off")
+			elseif not power and lowpower then
+				int:ApplyTextureSet("offlow")
 
 			elseif demat and not vortex and not ext:GetData("toyota_catwalks_demat_done") then
 
@@ -777,7 +811,7 @@ T.CustomHooks = {
 				int:SetData("toyota_catwalks_mat_required", nil)
 				int:ApplyTextureSet(warning and "mat_catwalks_warning" or "mat_catwalks")
 
-				int:Timer( "toyota_catwalks", ext.metadata.ToyotaCustom.mat_cw_delay or 2.2, function()
+				int:Timer( "toyota_catwalks", ext.metadata.ToyotaCustom.mat_cw_delay or 4, function()
 					ext:CallHook("ToyotaTextureUpdate", "toyota_texture_update")
 				end )
 
@@ -789,9 +823,11 @@ T.CustomHooks = {
 			end
 
 			if vortex and not demat then
+			if not int:GetData("spawn_in_vortex") then
 				int:Timer("toyota_catwalks_demat_reset", 0.1, function()
 					int:SetData("toyota_catwalks_demat_done", nil, true);
 				end)
+				end
 			end
 		end,
 	},

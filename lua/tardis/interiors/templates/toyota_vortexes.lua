@@ -31,7 +31,7 @@ TARDIS:AddInteriorTemplate("toyota_vortex_2014", {
 				model="models/doctorwho1200/toyota/2014timevortex.mdl",
 				pos=Vector(0,0,50),
 				ang=Angle(0,0,0),
-				scale=10
+				scale=5
 			}
 		},
 	},

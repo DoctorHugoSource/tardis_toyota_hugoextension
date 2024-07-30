@@ -331,9 +331,11 @@ TARDIS:AddInteriorTemplate("toyota_sounds_2017_F", {
 	Interior = {
 		Sounds = {
 			Teleport = {
-				demat = "Poogie/toyota/demat/demat_2015.wav",
-				fullflight = "Poogie/toyota/full/full_2017.wav",
-				mat = "Poogie/toyota/mat/mat.wav",
+				demat = "Poogie/toyota/demat/demat_2017_E.wav",
+				fullflight = "Poogie/toyota/full/2017_f_e_fullflight.ogg",
+				mathop = "Poogie/toyota/full/2017_f_mathop.ogg",
+				mat = "Poogie/toyota/mat/int_mat_2017_f_new.ogg",
+				mat_short = "Poogie/toyota/mat/int_mat_2017_f_short.ogg",
 				demat_fail = "Poogie/toyota/others/demat_fail_2017.wav",
 			},
 			Power = {
@@ -344,11 +346,11 @@ TARDIS:AddInteriorTemplate("toyota_sounds_2017_F", {
 		},
 	},
 	ToyotaCustom = {
-		throttle_sound = "Poogie/toyota/throttle/throttle_2017.wav",
-		throttle_sound_off = "Poogie/toyota/throttle/throttle_2017_off.wav",
+		throttle_sound = "Poogie/toyota/throttle/throttle_2017_TUAT.wav",
+		throttle_sound_off = "Poogie/toyota/throttle/throttle_2017_TUAT_off.wav",
 		handbrake_speed = 1.2,
 		handbrake_sound_on = "Poogie/toyota/handbrake/handbrake_2017_on.wav",
-		handbrake_sound_off = "Poogie/toyota/handbrake/handbrake_2017_off.wav",
+		handbrake_sound_off = "Poogie/toyota/handbrake/handbrake_2017_off_short.ogg",
 		easter_egg = "cem/toyota/clara_capaldi.wav",
 		red_lever_sound_off = "Poogie/toyota/controls/red_levers/lever_off_TUAT.wav",
 		red_lever_sound_on = "Poogie/toyota/controls/red_levers/lever_on_TUAT.wav",

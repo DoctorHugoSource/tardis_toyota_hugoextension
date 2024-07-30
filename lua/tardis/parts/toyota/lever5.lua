@@ -5,7 +5,22 @@ PART.Model = "models/cem/toyota/controls/lever5.mdl"
 PART.AutoSetup = true
 PART.Collision = true
 PART.Animate = true
-PART.AnimateSpeed = 2
-PART.Sound = "cem/toyota/lever5.wav"
+PART.AnimateSpeed = 8
+PART.Sound = "cem/toyota/levers.wav"
+
+    if SERVER then
+	function PART:Use(activator)
+
+		if self.exterior:GetBodygroup(0) == 0 then
+
+		   self.exterior:SetBodygroup(0, 1)
+		else
+		   self.exterior:SetBodygroup(0, 0)
+		end
+ 	end
+end
+
+
+
 
 TARDIS:AddPart(PART)
