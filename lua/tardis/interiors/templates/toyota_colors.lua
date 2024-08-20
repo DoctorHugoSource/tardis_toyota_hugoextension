@@ -261,9 +261,9 @@ TARDIS:AddInteriorTemplate("toyota_interior_orange_bright", {
 		},
 		TintProxies_Ext = {
 		[2] = "models/hugoextension/windows/toyota/off_f_tint.vmt",
-		[0] = "models/hugoextension/windows/toyota/frost_f_tint.vmt",
+		[0] = "models/hugoextension/windows/toyota/frost_f_tint_sides.vmt",
 		[6] = "models/hugoextension/windows/toyota/off_f_tint.vmt",
-		[7] = "models/hugoextension/windows/toyota/frost_f_tint.vmt",
+		[7] = "models/hugoextension/windows/toyota/frost_f_tint_sides.vmt",
 		},
 		TintProxies_ExtDoor = {
 		[4] = "models/hugoextension/windows/toyota/off_f_tint.vmt",

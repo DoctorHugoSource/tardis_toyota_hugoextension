@@ -270,6 +270,8 @@ T.Interior={
 		toyota_spin7			= {pos = Vector(-15.07, 47.02, 129.87),		right = true, 	down = false, },
 		toyota_ducks			= {pos = Vector(30.33, -30.84, 132.08),		right = false, 	down = false, },
 		toyota_levers3 			= {pos = Vector(29.86, 0, 137.54),			right = true, 	down = false, },
+		toyota_levers1 			= {pos = Vector(29.75,-6.51,137.62),		right = true, 	down = false, },
+
 
 
 
@@ -305,7 +307,6 @@ T.Interior={
 		toyota_handle2			= "float",
 		toyota_red_flick_switch	= "fastreturn",
 		toyota_hitbox2			= "toyota_easteregg_4",
-		toyota_bouncy_lever		= "random_coords",
 		toyota_fiddle1			= "random_coords",
 		toyota_key				= "toggle_console",
 
@@ -346,6 +347,8 @@ T.Interior={
 		toyota_spin7			= "vortexdrift",
 		toyota_ducks			= "multiloopstabiliser",
 		toyota_levers3			= "fastvortexremat",
+		toyota_levers1			= "timeswap",
+		toyota_bouncy_lever		= "timetravel_increment",
 
 
 
